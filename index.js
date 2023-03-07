@@ -43,18 +43,21 @@ let languages = ['C#','JavaScript','Ruby','PHP','Python']
 
 //Add ‘Kotlin’ to the end of the array
 languages.push('Kotlin')
-
+console.log(languages)
 //Add ‘Java’ after ‘Ruby’
 languages.splice(3, 0, 'Java')
+console.log(languages)
 
 //Remove the first item in the array
 languages.shift()
+console.log(languages)
 
 //Add ’Scala’ and ‘Swift’ to the beginning of the array
-languages.splice(0,0,'Scala','Swift')
+languages.unshift('Scala','Swift')
+console.log(languages)
 
 //Replace ‘PHP’ with ‘Go’ and ‘Rust’
-languages.splice(3,1,'Go', 'Rust')
+languages.splice(5,1,'Go', 'Rust')
 
 console.log(languages)
 
